@@ -1,5 +1,5 @@
 export class UnexpectedCharacter extends Error {
-    constructor() {
+    public constructor() {
       super("Invalid JSON: Unexpected character");
       this.name = "UnexpectedCharacter";
     }

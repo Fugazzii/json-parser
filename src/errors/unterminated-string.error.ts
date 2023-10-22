@@ -1,5 +1,5 @@
 export class UnterminatedStringError extends Error {
-    constructor() {
+    public constructor() {
       super("Invalid JSON: Unterminated string");
       this.name = "UnterminatedStringError";
     }

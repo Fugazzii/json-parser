@@ -1,5 +1,5 @@
 export class MalformedNumberError extends Error {
-    constructor() {
+    public constructor() {
       super("Invalid JSON: Malformed number");
       this.name = "MalformedNumberError";
     }
