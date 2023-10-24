@@ -5,11 +5,31 @@ To install dependencies:
 ```bash
 bun install
 ```
+- Parsing stringified JSON
+```typescript
+const jsonString = '{"name": "John", "age": 30, "isStudent": true, "city": null}';
+const parsedData = JsonParser.parse(jsonString);
 
+console.log("Parsed Data:");
+console.log(parsedData);    
+```
+- Stringifying JSON
+```typescript
+const data = {
+    name: "Alice",
+    age: 25,
+    isStudent: false,
+    city: "New York",
+    hobbies: ["Reading", "Hiking"],
+};
+        
+const jsonStr = JsonParser.stringify(data);
+
+console.log("\nJSON String:");
+console.log(jsonStr);
+```
 To run:
 
 ```bash
 bun run ./src/main.ts
 ```
-
-This project was created using `bun init` in bun v1.0.7. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
